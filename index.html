@@ -5,14 +5,55 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <title>Survey Webpage</title>
   </head>
 
   <body>
     <div class="container">
-      <div class="jumbotron">
+      <!-- <div class="jumbotron">
       <h1>A Survey about YOU</h1>
+      </div> -->
+      <div id="surveyCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#surveyCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#surveyCarousel" data-slide-to="1"></li>
+          <li data-target="#surveyCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/walrus.jpg" alt="Walrus">
+            <div class="carousel-caption">
+              <h1>A Survey about YOU</h1>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/monkey.jpg" alt="Monkey">
+            <div class="carousel-caption">
+              <h1>Give us your information...</h1>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/raccoon.jpg" alt="Raccoon">
+            <div class="carousel-caption">
+              <h1>We'll sell it to Google!</h1>
+            </div>
+          </div>
+        </div>
+
+        <a class="left carousel-control" href="#surveyCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#surveyCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+
+
+
 
       <div id="blanks">
         <form>

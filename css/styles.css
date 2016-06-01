@@ -61,3 +61,19 @@ input[type='radio']:checked:after {
   visibility: visible;
   border: 2px solid white;
 }
+
+#color {
+  height: 60px;
+}
+
+.carousel-inner {
+  height: 400px;
+}
+
+.carousel-inner h1 {
+  color: #AA3355;
+  font-size: 50px;
+}
+.carousel-indicators {
+  margin-bottom: -15px;
+}
