@@ -16,18 +16,22 @@
 
       <div id="blanks">
         <form>
-
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input id="name" class="form-control" type="text">
+          <div class="well well-sm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input id="name" class="form-control" type="text">
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="born">Date of birth:</label>
-            <input id="born" class="form-control" type="date">
+          <div class="well well-sm">
+            <div class="form-group">
+              <label for="born">Date of birth:</label>
+              <input id="born" class="form-control" type="date">
+            </div>
           </div>
 
-          <label for="meal" class="meal">Favorite Food:</label>
+          <div class="well well-sm">
+            <h5>Favorite Meal:</h5>
             <div class="radio">
               <label>
                 <input type="radio" name="meal" value="breakfast" checked>
@@ -58,31 +62,37 @@
                 Happy Hour
               </label>
             </div>
-
-          <select class="form-control" id="music">
-            <option>House</option>
-            <option>Indie</option>
-            <option>Electronic</option>
-          </select>
-
-          <div class="form-group">
-            <label for="color">What is your favorite color?</label>
-            <input id="color" class="form-control" type="color">
-
           </div>
 
-          <button type="Submit" class="btn btn-success">Enter</button>
-          <div class="alert alert-success" role="alert">You completed the survey!</div>
-          </form>
-        </div>
+          <div class="well well-sm">
+            <h5>Favorite Genre:</h5>
+            <select class="form-control" id="music">
+              <option>House</option>
+              <option>Indie</option>
+              <option>Electronic</option>
+              <option>Classical</option>
+              <option>Folk</option>
+              <option>Rap</option>
+              <option>Justin Bieber</option>
+            </select>
+          </div>
 
+          <div class="well well-sm">
+            <div class="form-group">
+              <label for="color">Choose your favorite color:</label>
+              <input id="color" class="form-control" type="color">
+            </div>
+          </div>
+
+          <button type="Submit" class="btn btn-lg">Enter</button>
+          <div class="alert alert-success" role="alert">NICE WORK! You completed the survey! Your information will now be sold to Google.</div>
+        </form>
+      </div>
 
       <div id="survey-results">
         <h1>Your responses:</h1>
-        <p>Thanks for taking our survey, <span class="name"></span>. You were born on <span class="born"></span>. Your favorite meal of the day is <span class="meal"></span>. You like to listen to <span class="music"></span>, and your favorite color is <span class="color"></span>!</p>
+        <p>Thanks for taking our survey, <span class="name"></span>. You were born on <span class="born"></span>. Your favorite meal of the day is <span class="meal"></span>. You like to listen to <span class="music"></span> music, and your favorite color is <span class="color"></span>!</p>
       </div>
-
-
     </div>
   </body>
 </html>
