@@ -10,7 +10,9 @@
 
   <body>
     <div class="container">
+      <div class="jumbotron">
       <h1>A Survey about YOU</h1>
+      </div>
 
       <div id="blanks">
         <form>
@@ -63,7 +65,14 @@
             <option>Electronic</option>
           </select>
 
-          <button type="Submit" class="btn">Enter</button>
+          <div class="form-group">
+            <label for="color">What is your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+
+          </div>
+
+          <button type="Submit" class="btn btn-success">Enter</button>
+          <div class="alert alert-success" role="alert">You completed the survey!</div>
           </form>
         </div>
 
@@ -74,7 +83,10 @@
         <p>Your birthday is: <span class="born"></span></p>
         <p>Your favorite meal is: <span class="meal"></span></p>
         <p>You like to listen to: <span class="music"></span></p>
+        <p>Your favorite color is: <span class="color"></span></p>
       </div>
+
+
     </div>
   </body>
 </html>
