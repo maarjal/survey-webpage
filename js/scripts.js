@@ -10,7 +10,7 @@ $(function() {
     $(".meal").text(meal);
 
     var music = $("#music").val();
-    $(".music").text(music);
+    $(".music").text(music.toLowerCase());
 
     var favoriteColor = $("#color").val();
     $(".color").text(favoriteColor);

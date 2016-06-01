@@ -1,6 +1,9 @@
 #survey-results {
   display: none;
+  font-size: 25px;
   color: white;
+  font-family: sans-serif;
+  text-align: center;
 }
 
 .alert {
