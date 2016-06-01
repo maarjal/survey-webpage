@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Survey Webpage</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>A Survey about YOU</h1>
+
+      <div id="blanks">
+        <form>
+
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="born">Date of birth:</label>
+            <input id="born" class="form-control" type="date">
+          </div>
+
+          <label for="meal" class="meal">Favorite Food:</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="meal" value="breakfast" checked>
+                Breakfast
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="meal" value="lunch">
+                Lunch
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="meal" value="dinner">
+                Dinner
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="meal" value="dessert">
+                Dessert
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="meal" value="happy-hour">
+                Happy Hour
+              </label>
+            </div>
+
+          <select class="form-control" id="music">
+            <option>House</option>
+            <option>Indie</option>
+            <option>Electronic</option>
+          </select>
+
+          <button type="Submit" class="btn">Enter</button>
+          </form>
+        </div>
+
+
+      <div id="survey-results">
+        <h1>Your responses:</h1>
+        <p>Your name is: <span class="name"></span>.</p>
+        <p>Your birthday is: <span class="born"></span></p>
+        <p>Your favorite meal is: <span class="meal"></span></p>
+        <p>You like to listen to: <span class="music"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
